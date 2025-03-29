@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/beryllium
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/beryllium/proprietary/system_ext/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/fm_helium.so \
-    vendor/xiaomi/beryllium/proprietary/system_ext/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libfm-hci.so \
     vendor/xiaomi/beryllium/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
     vendor/xiaomi/beryllium/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
@@ -185,19 +183,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/camera/systemdefault.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/systemdefault.bin \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/camera/titan17x_usecases.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/titan17x_usecases.bin \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFaceGrade.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXMFD_AgeGender.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/lib_denoiser3.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_denoiser3.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaoa.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libarcsoft_dualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_image_optical_zoom.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libarcsoft_dualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_optical_zoom_control.so \
@@ -208,10 +200,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libarcsoft_portrait_lighting.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portrait_lighting.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portrait_lighting_c.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_supernight.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libcamera_dirty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_dirty.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_scene.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
@@ -219,59 +208,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libft2vendor.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdtap.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofencing.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libmibokeh_845.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmibokeh_845.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnanopb.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaiclib.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libscveFaceLandmarks.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceLandmarks.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceRecognition.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libstfaceunlockoclqcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlockoclqcom.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-cpu.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libtonemapalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtonemapalgo.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeybox.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/mibokeh_845_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib/mibokeh_845_opencl.bin \
     vendor/xiaomi/beryllium/proprietary/vendor/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/dirac_resource.dar \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.1.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.2.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.0.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.1.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@3.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0-service.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
@@ -279,7 +234,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/hw/fingerprint.goodix.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.sdm845.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
@@ -312,8 +266,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib64/libscveFaceLandmarks.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceLandmarks.so \
-    vendor/xiaomi/beryllium/proprietary/vendor/lib64/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceRecognition.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvkeybox.so \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
